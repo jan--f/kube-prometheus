@@ -64,12 +64,12 @@
     {
       "source": {
         "git": {
-          "remote": "https://github.com/kubernetes-monitoring/kubernetes-mixin.git",
+          "remote": "https://github.com/jan--f/kubernetes-mixin.git",
           "subdir": ""
         }
       },
-      "version": "05ca993f01ee4dada3ea4d2afd51693784c6d858",
-      "sum": "SqrljHWptkp0AT2w5/+n1KdE8EWzr3KydvW2DCltKnA="
+      "version": "e07365e486f8b3793b153bcff492de4cfe3f81e3",
+      "sum": "xPvOJDff/eVeOdYUj/bUCM+mEQ2KvglOpifTtGxKyLE="
     },
     {
       "source": {

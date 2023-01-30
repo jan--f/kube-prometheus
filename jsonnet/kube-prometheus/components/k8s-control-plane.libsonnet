@@ -35,7 +35,7 @@ function(params) {
     namespace: k8s._config.namespace,
   },
 
-  mixin:: (import 'github.com/kubernetes-monitoring/kubernetes-mixin/mixin.libsonnet') {
+  mixin:: (import 'github.com/jan--f/kubernetes-mixin/mixin.libsonnet') {
     _config+:: k8s._config.mixin._config,
   } + {
     // Filter-out alerts related to kube-proxy when `kubeProxy: false`

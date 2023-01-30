@@ -69,7 +69,7 @@ function(params) (import 'github.com/kubernetes/kube-state-metrics/jsonnet/kube-
   },
 
   mixin:: (import 'github.com/kubernetes/kube-state-metrics/jsonnet/kube-state-metrics-mixin/mixin.libsonnet') +
-          (import 'github.com/kubernetes-monitoring/kubernetes-mixin/lib/add-runbook-links.libsonnet') {
+          (import 'github.com/jan--f/kubernetes-mixin/lib/add-runbook-links.libsonnet') {
             _config+:: ksm._config.mixin._config,
           },
 

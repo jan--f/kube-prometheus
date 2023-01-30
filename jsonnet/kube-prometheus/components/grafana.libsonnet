@@ -48,7 +48,7 @@ function(params)
 
     mixin::
       (import 'github.com/grafana/grafana/grafana-mixin/mixin.libsonnet') +
-      (import 'github.com/kubernetes-monitoring/kubernetes-mixin/lib/add-runbook-links.libsonnet') + {
+      (import 'github.com/jan--f/kubernetes-mixin/lib/add-runbook-links.libsonnet') + {
         _config+:: g._config.mixin._config,
       },
 

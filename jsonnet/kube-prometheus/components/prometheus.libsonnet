@@ -67,13 +67,13 @@ function(params) {
 
   mixin::
     (import 'github.com/prometheus/prometheus/documentation/prometheus-mixin/mixin.libsonnet') +
-    (import 'github.com/kubernetes-monitoring/kubernetes-mixin/lib/add-runbook-links.libsonnet') + {
+    (import 'github.com/jan--f/kubernetes-mixin/lib/add-runbook-links.libsonnet') + {
       _config+:: p._config.mixin._config,
     },
 
   mixinThanos::
     (import 'github.com/thanos-io/thanos/mixin/alerts/sidecar.libsonnet') +
-    (import 'github.com/kubernetes-monitoring/kubernetes-mixin/lib/add-runbook-links.libsonnet') + {
+    (import 'github.com/jan--f/kubernetes-mixin/lib/add-runbook-links.libsonnet') + {
       _config+:: p._config.mixin._config,
       targetGroups+: p._config.mixin._config.thanos.targetGroups,
       // TODO: remove `_config.thanosSelector` after 0.10.0 release.

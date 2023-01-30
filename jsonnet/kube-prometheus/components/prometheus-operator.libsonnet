@@ -53,7 +53,7 @@ function(params)
       namespace: po._config.namespace,
     },
     mixin:: (import 'github.com/prometheus-operator/prometheus-operator/jsonnet/mixin/mixin.libsonnet') +
-            (import 'github.com/kubernetes-monitoring/kubernetes-mixin/lib/add-runbook-links.libsonnet') {
+            (import 'github.com/jan--f/kubernetes-mixin/lib/add-runbook-links.libsonnet') {
               _config+:: po._config.mixin._config,
             },
 
